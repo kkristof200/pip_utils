@@ -9,14 +9,14 @@ else:
 
 setuptools.setup(
     name="kdependencies",
-    version="0.0.2",
+    version="0.0.3",
     author="Kristof",
     description="kdependencies",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/kkristof200/pip_utils",
+    url="https://github.com/kkristof200/py_dependencies",
     packages=setuptools.find_packages(),
-    install_requires=["pipreqs", "jsoncodable"],
+    install_requires=["jsoncodable", "pipreqs"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
