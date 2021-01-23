@@ -59,6 +59,8 @@ class InstalledPackage(Package):
     def get_install_name(self, include_version: bool = False) -> Optional[str]:
         return super().get_install_name(include_version=include_version) if not self.private else '{} @ git+{}'.format(super().get_install_name(include_version=include_version), self.home_page) if self.home_page else None
 
+    def get_install_command(self, include_version: bool = True) -> str:
+        return 'python3 -m pip install -U {}'.format(self.versioned_name if include_version and not self.private else self.name if not self.private else 'git+{}'.format(self.home_page))
 
     # ------------------------------------------------------- Private methods -------------------------------------------------------- #
 

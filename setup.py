@@ -9,7 +9,7 @@ else:
 
 setuptools.setup(
     name="kdependencies",
-    version="0.0.3",
+    version="0.0.4",
     author="Kristof",
     description="kdependencies",
     long_description=long_description,
