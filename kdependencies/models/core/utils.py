@@ -33,7 +33,7 @@ class Utils:
     def sh(
         cmd: str,
         debug: bool = False
-    ) -> str:        
+    ) -> str:
         if debug:
             print(cmd)
 
